@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Rating state start -->
+    <div class="rating-state" id="rating-state">
+      <div class="illustration star-icon">
+        <img src="./images/icon-star.svg" alt="Star Icon">
+      </div>
+
+      <h1 class="title">How did we do?</h1>
+
+      <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+
+      <div class="rating">
+        <div class="rating-item" value="1">1</div>
+        <div class="rating-item" value="2">2</div>
+        <div class="rating-item" value="3">3</div>
+        <div class="rating-item" value="4">4</div>
+        <div class="rating-item" value="5">5</div>
+      </div>
+
+      <button class="btn" onclick="btnSubmit()">Submit</button>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="thank-you-state" id="thank-you-state">
+      <div class="illustration">
+        <img src="./images/illustration-thank-you.svg" alt="">
+      </div>
+      
+      <div class="rating-selected">
+        <p id="rating-extra">You selected <!-- Add rating here --> out of 5</p>
+      </div>
+
+      <h1 class="title">Thank you!</h1>
+
+      <p class="text">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+    </div>
+    <!-- Thank you state end -->
+  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Temirlan</a>.
+    </div>
+  </div>
+
+  <script src="./javascript.js"></script>
+</body>
+</html>
